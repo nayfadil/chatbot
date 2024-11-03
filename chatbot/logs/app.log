@@ -1,0 +1,447 @@
+2024-11-03T15:57:28.324+07:00  INFO 2268 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Starting ChatbotApplication using Java 21.0.2 with PID 2268 (D:\Private\chatbot\target\classes started by IBNU FADYLA in D:\Private\chatbot)
+2024-11-03T15:57:28.326+07:00 DEBUG 2268 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Running with Spring Boot v3.3.6-SNAPSHOT, Spring v6.1.14
+2024-11-03T15:57:28.326+07:00  INFO 2268 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-03T15:57:28.370+07:00  INFO 2268 --- [chatbot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-03T15:57:28.371+07:00  INFO 2268 --- [chatbot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-03T15:57:28.997+07:00  INFO 2268 --- [chatbot] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T15:57:29.065+07:00  INFO 2268 --- [chatbot] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2024-11-03T15:57:29.654+07:00  INFO 2268 --- [chatbot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-03T15:57:29.674+07:00  INFO 2268 --- [chatbot] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T15:57:29.675+07:00  INFO 2268 --- [chatbot] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T15:57:29.714+07:00  INFO 2268 --- [chatbot] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T15:57:29.714+07:00  INFO 2268 --- [chatbot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1343 ms
+2024-11-03T15:57:29.740+07:00  INFO 2268 --- [chatbot] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T15:57:29.878+07:00  INFO 2268 --- [chatbot] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:chatbot user=SA
+2024-11-03T15:57:29.880+07:00  INFO 2268 --- [chatbot] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T15:57:29.890+07:00  INFO 2268 --- [chatbot] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:chatbot'
+2024-11-03T15:57:30.062+07:00  INFO 2268 --- [chatbot] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T15:57:30.123+07:00  INFO 2268 --- [chatbot] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-03T15:57:30.158+07:00  INFO 2268 --- [chatbot] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T15:57:30.429+07:00  INFO 2268 --- [chatbot] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T15:57:30.963+07:00  INFO 2268 --- [chatbot] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.simple.chatbot.model.Message (class must be instantiated by Interceptor)
+2024-11-03T15:57:31.106+07:00  INFO 2268 --- [chatbot] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T15:57:31.148+07:00  INFO 2268 --- [chatbot] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T15:57:31.531+07:00  WARN 2268 --- [chatbot] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T15:57:31.613+07:00 DEBUG 2268 --- [chatbot] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-11-03T15:57:31.684+07:00 DEBUG 2268 --- [chatbot] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-03T15:57:31.718+07:00 DEBUG 2268 --- [chatbot] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-03T15:57:31.750+07:00 DEBUG 2268 --- [chatbot] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-03T15:57:31.856+07:00  INFO 2268 --- [chatbot] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-03T15:57:31.885+07:00  INFO 2268 --- [chatbot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-03T15:57:31.893+07:00  INFO 2268 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Started ChatbotApplication in 3.954 seconds (process running for 4.42)
+2024-11-03T15:57:43.721+07:00  INFO 2268 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T15:57:43.721+07:00  INFO 2268 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T15:57:43.722+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-03T15:57:43.722+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-03T15:57:43.722+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-03T15:57:43.722+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@738f5362
+2024-11-03T15:57:43.723+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5ec90853
+2024-11-03T15:57:43.723+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-03T15:57:43.723+07:00  INFO 2268 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-03T15:57:43.730+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T15:57:43.738+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T15:57:43.805+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Hello)]
+2024-11-03T15:57:43.812+07:00  INFO 2268 --- [chatbot] [http-nio-8080-exec-1] c.s.c.service.impl.ChatServiceImpl       : Question : Hello 
+2024-11-03T15:57:43.993+07:00  INFO 2268 --- [chatbot] [http-nio-8080-exec-1] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T15:57:44.006+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-03T15:57:44.007+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T15:57:44.019+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T15:58:10.890+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T15:58:10.891+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T15:58:10.892+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Test)]
+2024-11-03T15:58:10.892+07:00  INFO 2268 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Question : Test 
+2024-11-03T15:58:10.896+07:00  INFO 2268 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T15:58:10.896+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-03T15:58:10.896+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T15:58:10.897+07:00 DEBUG 2268 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T15:58:16.141+07:00  INFO 2268 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T15:58:16.150+07:00  WARN 2268 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-03T15:58:16.150+07:00  INFO 2268 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T15:58:16.153+07:00  INFO 2268 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T15:59:30.441+07:00  INFO 28508 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Starting ChatbotApplication using Java 21.0.2 with PID 28508 (D:\Private\chatbot\target\classes started by IBNU FADYLA in D:\Private\chatbot)
+2024-11-03T15:59:30.443+07:00 DEBUG 28508 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Running with Spring Boot v3.3.6-SNAPSHOT, Spring v6.1.14
+2024-11-03T15:59:30.444+07:00  INFO 28508 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-03T15:59:30.487+07:00  INFO 28508 --- [chatbot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-03T15:59:30.488+07:00  INFO 28508 --- [chatbot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-03T15:59:31.106+07:00  INFO 28508 --- [chatbot] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T15:59:31.176+07:00  INFO 28508 --- [chatbot] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+2024-11-03T15:59:31.780+07:00  INFO 28508 --- [chatbot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-03T15:59:31.796+07:00  INFO 28508 --- [chatbot] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T15:59:31.796+07:00  INFO 28508 --- [chatbot] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T15:59:31.846+07:00  INFO 28508 --- [chatbot] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T15:59:31.846+07:00  INFO 28508 --- [chatbot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1358 ms
+2024-11-03T15:59:31.874+07:00  INFO 28508 --- [chatbot] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T15:59:32.019+07:00  INFO 28508 --- [chatbot] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:chatbot user=SA
+2024-11-03T15:59:32.021+07:00  INFO 28508 --- [chatbot] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T15:59:32.030+07:00  INFO 28508 --- [chatbot] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:chatbot'
+2024-11-03T15:59:32.189+07:00  INFO 28508 --- [chatbot] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T15:59:32.277+07:00  INFO 28508 --- [chatbot] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-03T15:59:32.310+07:00  INFO 28508 --- [chatbot] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T15:59:32.593+07:00  INFO 28508 --- [chatbot] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T15:59:33.134+07:00  INFO 28508 --- [chatbot] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.simple.chatbot.model.Message (class must be instantiated by Interceptor)
+2024-11-03T15:59:33.279+07:00  INFO 28508 --- [chatbot] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T15:59:33.321+07:00  INFO 28508 --- [chatbot] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T15:59:33.702+07:00  WARN 28508 --- [chatbot] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T15:59:33.780+07:00 DEBUG 28508 --- [chatbot] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-11-03T15:59:33.854+07:00 DEBUG 28508 --- [chatbot] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-03T15:59:33.889+07:00 DEBUG 28508 --- [chatbot] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-03T15:59:33.925+07:00 DEBUG 28508 --- [chatbot] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-03T15:59:34.021+07:00  INFO 28508 --- [chatbot] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-03T15:59:34.058+07:00  INFO 28508 --- [chatbot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-03T15:59:34.066+07:00  INFO 28508 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Started ChatbotApplication in 4.025 seconds (process running for 4.483)
+2024-11-03T15:59:41.908+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T15:59:41.909+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T15:59:41.909+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-03T15:59:41.909+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-03T15:59:41.909+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-03T15:59:41.911+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@847e709
+2024-11-03T15:59:41.911+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4ffd1e0c
+2024-11-03T15:59:41.911+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-03T15:59:41.911+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-03T15:59:41.920+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T15:59:41.929+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T15:59:41.995+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Test)]
+2024-11-03T15:59:42.002+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-1] c.s.c.service.impl.ChatServiceImpl       : Question : Test 
+2024-11-03T15:59:42.210+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-1] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T15:59:42.229+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-03T15:59:42.231+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T15:59:42.246+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T15:59:46.568+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T15:59:46.568+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T15:59:46.569+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=null)]
+2024-11-03T15:59:46.569+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Question : null 
+2024-11-03T15:59:46.584+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T15:59:46.584+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-03T15:59:46.584+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T15:59:46.585+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T15:59:59.148+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T15:59:59.148+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T15:59:59.149+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=null)]
+2024-11-03T15:59:59.149+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-4] c.s.c.service.impl.ChatServiceImpl       : Question : null 
+2024-11-03T15:59:59.153+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-4] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T15:59:59.153+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-03T15:59:59.153+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T15:59:59.154+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:00:13.813+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:00:13.813+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:00:13.814+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=null)]
+2024-11-03T16:00:13.814+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-5] c.s.c.service.impl.ChatServiceImpl       : Question : null 
+2024-11-03T16:00:13.818+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-5] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T16:00:13.818+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-03T16:00:13.818+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T16:00:13.819+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:00:20.909+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:00:20.910+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:00:20.910+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=null)]
+2024-11-03T16:00:20.911+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-7] c.s.c.service.impl.ChatServiceImpl       : Question : null 
+2024-11-03T16:00:20.914+07:00  INFO 28508 --- [chatbot] [http-nio-8080-exec-7] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T16:00:20.914+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-03T16:00:20.914+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T16:00:20.915+07:00 DEBUG 28508 --- [chatbot] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:00:50.817+07:00  INFO 28508 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T16:00:50.821+07:00  WARN 28508 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-03T16:00:50.822+07:00  INFO 28508 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T16:00:50.823+07:00  INFO 28508 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T16:19:02.998+07:00  INFO 9692 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Starting ChatbotApplication using Java 21.0.2 with PID 9692 (D:\Private\chatbot\target\classes started by IBNU FADYLA in D:\Private\chatbot)
+2024-11-03T16:19:02.999+07:00 DEBUG 9692 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Running with Spring Boot v3.3.6-SNAPSHOT, Spring v6.1.14
+2024-11-03T16:19:03.000+07:00  INFO 9692 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-03T16:19:03.042+07:00  INFO 9692 --- [chatbot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-03T16:19:03.043+07:00  INFO 9692 --- [chatbot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-03T16:19:03.638+07:00  INFO 9692 --- [chatbot] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T16:19:03.716+07:00  INFO 9692 --- [chatbot] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+2024-11-03T16:19:04.315+07:00  INFO 9692 --- [chatbot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-03T16:19:04.329+07:00  INFO 9692 --- [chatbot] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T16:19:04.330+07:00  INFO 9692 --- [chatbot] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T16:19:04.382+07:00  INFO 9692 --- [chatbot] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T16:19:04.382+07:00  INFO 9692 --- [chatbot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1339 ms
+2024-11-03T16:19:04.417+07:00  INFO 9692 --- [chatbot] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T16:19:04.568+07:00  INFO 9692 --- [chatbot] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:chatbot user=SA
+2024-11-03T16:19:04.570+07:00  INFO 9692 --- [chatbot] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T16:19:04.585+07:00  INFO 9692 --- [chatbot] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:chatbot'
+2024-11-03T16:19:04.734+07:00  INFO 9692 --- [chatbot] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T16:19:04.808+07:00  INFO 9692 --- [chatbot] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-03T16:19:04.843+07:00  INFO 9692 --- [chatbot] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T16:19:05.116+07:00  INFO 9692 --- [chatbot] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T16:19:05.636+07:00  INFO 9692 --- [chatbot] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.simple.chatbot.model.Message (class must be instantiated by Interceptor)
+2024-11-03T16:19:05.780+07:00  INFO 9692 --- [chatbot] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T16:19:05.823+07:00  INFO 9692 --- [chatbot] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T16:19:06.202+07:00  WARN 9692 --- [chatbot] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T16:19:06.280+07:00 DEBUG 9692 --- [chatbot] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-11-03T16:19:06.350+07:00 DEBUG 9692 --- [chatbot] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-03T16:19:06.382+07:00 DEBUG 9692 --- [chatbot] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-03T16:19:06.406+07:00 DEBUG 9692 --- [chatbot] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-03T16:19:06.503+07:00  INFO 9692 --- [chatbot] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-03T16:19:06.540+07:00  INFO 9692 --- [chatbot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-03T16:19:06.548+07:00  INFO 9692 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Started ChatbotApplication in 3.934 seconds (process running for 4.388)
+2024-11-03T16:19:09.841+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T16:19:09.842+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T16:19:09.842+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-03T16:19:09.842+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-03T16:19:09.842+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-03T16:19:09.843+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@520ca579
+2024-11-03T16:19:09.843+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d243dcd
+2024-11-03T16:19:09.843+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-03T16:19:09.843+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-03T16:19:09.850+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/chat/question", parameters={}
+2024-11-03T16:19:09.857+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:19:09.870+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:19:09.877+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:19:09.878+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:19:09.936+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Hello)]
+2024-11-03T16:19:09.942+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-2] c.s.c.service.impl.ChatServiceImpl       : Question : Hello 
+2024-11-03T16:19:10.108+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-2] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:19:10.122+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:19:10.124+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:19:10.137+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:19:41.006+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:19:41.006+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:19:41.006+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Hello)]
+2024-11-03T16:19:41.006+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Question : Hello 
+2024-11-03T16:19:41.013+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:19:41.013+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:19:41.013+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:19:41.013+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:21:41.922+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:21:41.922+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:21:41.924+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Hello)]
+2024-11-03T16:21:41.924+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-5] c.s.c.service.impl.ChatServiceImpl       : Question : Hello 
+2024-11-03T16:21:41.927+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-5] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:21:41.928+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:21:41.928+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:21:41.929+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:22:03.116+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:22:03.117+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:22:03.118+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Hello)]
+2024-11-03T16:22:03.118+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-6] c.s.c.service.impl.ChatServiceImpl       : Question : Hello 
+2024-11-03T16:22:03.118+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-6] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:22:03.118+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:22:03.118+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:22:03.118+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:24:04.008+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:24:04.009+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:24:04.010+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Test)]
+2024-11-03T16:24:04.010+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-8] c.s.c.service.impl.ChatServiceImpl       : Question : Test 
+2024-11-03T16:24:04.015+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-8] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T16:24:04.016+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:24:04.016+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T16:24:04.017+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:25:49.366+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:25:49.366+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:25:49.366+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Hello)]
+2024-11-03T16:25:49.366+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-10] c.s.c.service.impl.ChatServiceImpl       : Question : Hello 
+2024-11-03T16:25:49.366+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-10] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:25:49.366+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:25:49.366+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:25:49.366+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:26:45.795+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:26:45.795+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:26:45.796+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Hello)]
+2024-11-03T16:26:45.796+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-1] c.s.c.service.impl.ChatServiceImpl       : Question : Hello 
+2024-11-03T16:26:45.800+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-1] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:26:45.801+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:26:45.801+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:26:45.802+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:27:09.929+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:27:09.929+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:27:09.929+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Hello)]
+2024-11-03T16:27:09.929+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-2] c.s.c.service.impl.ChatServiceImpl       : Question : Hello 
+2024-11-03T16:27:09.935+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-2] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:27:09.935+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:27:09.935+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:27:09.935+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:27:43.018+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:27:43.018+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:27:43.018+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Hello)]
+2024-11-03T16:27:43.018+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Question : Hello 
+2024-11-03T16:27:43.018+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:27:43.025+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:27:43.025+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:27:43.026+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:27:59.584+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:27:59.584+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:27:59.584+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Who are you?)]
+2024-11-03T16:27:59.584+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-4] c.s.c.service.impl.ChatServiceImpl       : Question : Who are you? 
+2024-11-03T16:27:59.591+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-4] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T16:27:59.591+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:27:59.591+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T16:27:59.591+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:28:05.131+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:28:05.131+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:28:05.137+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Who are you ?)]
+2024-11-03T16:28:05.137+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-5] c.s.c.service.impl.ChatServiceImpl       : Question : Who are you ? 
+2024-11-03T16:28:05.138+07:00  INFO 9692 --- [chatbot] [http-nio-8080-exec-5] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am your virtual assistant.
+2024-11-03T16:28:05.138+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:28:05.138+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am your (truncated)...]
+2024-11-03T16:28:05.138+07:00 DEBUG 9692 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:30:41.933+07:00  INFO 9692 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T16:30:41.938+07:00  WARN 9692 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-03T16:30:41.939+07:00  INFO 9692 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T16:30:41.941+07:00  INFO 9692 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T16:33:19.874+07:00  INFO 20404 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Starting ChatbotApplication using Java 21.0.2 with PID 20404 (D:\Private\chatbot\target\classes started by IBNU FADYLA in D:\Private\chatbot)
+2024-11-03T16:33:19.876+07:00 DEBUG 20404 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Running with Spring Boot v3.3.6-SNAPSHOT, Spring v6.1.14
+2024-11-03T16:33:19.877+07:00  INFO 20404 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-03T16:33:19.923+07:00  INFO 20404 --- [chatbot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-03T16:33:19.923+07:00  INFO 20404 --- [chatbot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-03T16:33:20.525+07:00  INFO 20404 --- [chatbot] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T16:33:20.593+07:00  INFO 20404 --- [chatbot] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+2024-11-03T16:33:21.202+07:00  INFO 20404 --- [chatbot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-03T16:33:21.216+07:00  INFO 20404 --- [chatbot] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T16:33:21.216+07:00  INFO 20404 --- [chatbot] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T16:33:21.261+07:00  INFO 20404 --- [chatbot] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T16:33:21.261+07:00  INFO 20404 --- [chatbot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1338 ms
+2024-11-03T16:33:21.288+07:00  INFO 20404 --- [chatbot] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T16:33:21.428+07:00  INFO 20404 --- [chatbot] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:chatbot user=SA
+2024-11-03T16:33:21.430+07:00  INFO 20404 --- [chatbot] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T16:33:21.439+07:00  INFO 20404 --- [chatbot] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:chatbot'
+2024-11-03T16:33:21.611+07:00  INFO 20404 --- [chatbot] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T16:33:21.670+07:00  INFO 20404 --- [chatbot] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-03T16:33:21.704+07:00  INFO 20404 --- [chatbot] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T16:33:21.989+07:00  INFO 20404 --- [chatbot] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T16:33:22.525+07:00  INFO 20404 --- [chatbot] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.simple.chatbot.model.Message (class must be instantiated by Interceptor)
+2024-11-03T16:33:22.663+07:00  INFO 20404 --- [chatbot] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T16:33:22.711+07:00  INFO 20404 --- [chatbot] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T16:33:23.081+07:00  WARN 20404 --- [chatbot] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T16:33:23.158+07:00 DEBUG 20404 --- [chatbot] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-11-03T16:33:23.235+07:00 DEBUG 20404 --- [chatbot] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-03T16:33:23.275+07:00 DEBUG 20404 --- [chatbot] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-03T16:33:23.305+07:00 DEBUG 20404 --- [chatbot] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-03T16:33:23.403+07:00  INFO 20404 --- [chatbot] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-03T16:33:23.438+07:00  INFO 20404 --- [chatbot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-03T16:33:23.445+07:00  INFO 20404 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Started ChatbotApplication in 3.953 seconds (process running for 4.411)
+2024-11-03T16:33:34.271+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T16:33:34.271+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T16:33:34.271+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-03T16:33:34.271+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-03T16:33:34.271+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-03T16:33:34.278+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@24c51985
+2024-11-03T16:33:34.278+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5feb8f54
+2024-11-03T16:33:34.278+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-03T16:33:34.278+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-11-03T16:33:34.285+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:33:34.299+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:33:34.376+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=hello)]
+2024-11-03T16:33:34.383+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-1] c.s.c.service.impl.ChatServiceImpl       : Question : hello 
+2024-11-03T16:33:34.564+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-1] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:33:34.580+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:33:34.580+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:33:34.601+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:33:41.843+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:33:41.843+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:33:41.844+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=who are you)]
+2024-11-03T16:33:41.844+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-2] c.s.c.service.impl.ChatServiceImpl       : Question : who are you 
+2024-11-03T16:33:41.844+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-2] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am your virtual assistant.
+2024-11-03T16:33:41.844+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:33:41.844+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am your (truncated)...]
+2024-11-03T16:33:41.850+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:33:55.958+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:33:55.958+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:33:55.958+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=what is your name)]
+2024-11-03T16:33:55.958+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Question : what is your name 
+2024-11-03T16:33:55.963+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am Yu
+2024-11-03T16:33:55.963+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:33:55.963+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am Yu))]
+2024-11-03T16:33:55.963+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:34:06.720+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:34:06.720+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:34:06.720+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=wh are yo?)]
+2024-11-03T16:34:06.720+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-4] c.s.c.service.impl.ChatServiceImpl       : Question : wh are yo? 
+2024-11-03T16:34:06.725+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-4] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am your virtual assistant.
+2024-11-03T16:34:06.725+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:34:06.725+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am your (truncated)...]
+2024-11-03T16:34:06.725+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:34:12.690+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:34:12.690+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:34:12.690+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=test)]
+2024-11-03T16:34:12.690+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-5] c.s.c.service.impl.ChatServiceImpl       : Question : test 
+2024-11-03T16:34:12.695+07:00  INFO 20404 --- [chatbot] [http-nio-8080-exec-5] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:34:12.696+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:34:12.696+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:34:12.696+07:00 DEBUG 20404 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:34:29.316+07:00  INFO 20404 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T16:34:29.321+07:00  WARN 20404 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-03T16:34:29.321+07:00  INFO 20404 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T16:34:29.323+07:00  INFO 20404 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T16:34:33.629+07:00  INFO 22916 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Starting ChatbotApplication using Java 21.0.2 with PID 22916 (D:\Private\chatbot\target\classes started by IBNU FADYLA in D:\Private\chatbot)
+2024-11-03T16:34:33.631+07:00 DEBUG 22916 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Running with Spring Boot v3.3.6-SNAPSHOT, Spring v6.1.14
+2024-11-03T16:34:33.632+07:00  INFO 22916 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-11-03T16:34:33.675+07:00  INFO 22916 --- [chatbot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-03T16:34:33.675+07:00  INFO 22916 --- [chatbot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-03T16:34:34.304+07:00  INFO 22916 --- [chatbot] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T16:34:34.367+07:00  INFO 22916 --- [chatbot] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2024-11-03T16:34:34.950+07:00  INFO 22916 --- [chatbot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-03T16:34:34.964+07:00  INFO 22916 --- [chatbot] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T16:34:34.965+07:00  INFO 22916 --- [chatbot] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T16:34:35.004+07:00  INFO 22916 --- [chatbot] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T16:34:35.004+07:00  INFO 22916 --- [chatbot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1329 ms
+2024-11-03T16:34:35.030+07:00  INFO 22916 --- [chatbot] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T16:34:35.171+07:00  INFO 22916 --- [chatbot] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:chatbot user=SA
+2024-11-03T16:34:35.174+07:00  INFO 22916 --- [chatbot] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T16:34:35.185+07:00  INFO 22916 --- [chatbot] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:chatbot'
+2024-11-03T16:34:35.346+07:00  INFO 22916 --- [chatbot] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T16:34:35.402+07:00  INFO 22916 --- [chatbot] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-03T16:34:35.430+07:00  INFO 22916 --- [chatbot] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T16:34:35.683+07:00  INFO 22916 --- [chatbot] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T16:34:36.209+07:00  INFO 22916 --- [chatbot] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.simple.chatbot.model.Message (class must be instantiated by Interceptor)
+2024-11-03T16:34:36.353+07:00  INFO 22916 --- [chatbot] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T16:34:36.397+07:00  INFO 22916 --- [chatbot] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T16:34:36.775+07:00  WARN 22916 --- [chatbot] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T16:34:36.852+07:00 DEBUG 22916 --- [chatbot] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-11-03T16:34:36.921+07:00 DEBUG 22916 --- [chatbot] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-03T16:34:36.950+07:00 DEBUG 22916 --- [chatbot] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-03T16:34:36.985+07:00 DEBUG 22916 --- [chatbot] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-03T16:34:37.081+07:00  INFO 22916 --- [chatbot] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-03T16:34:37.114+07:00  INFO 22916 --- [chatbot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-03T16:34:37.121+07:00  INFO 22916 --- [chatbot] [restartedMain] com.simple.chatbot.ChatbotApplication    : Started ChatbotApplication in 3.882 seconds (process running for 4.348)
+2024-11-03T16:34:42.490+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T16:34:42.490+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T16:34:42.491+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-03T16:34:42.491+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-03T16:34:42.491+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-03T16:34:42.491+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7caed1d1
+2024-11-03T16:34:42.493+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1abac0a8
+2024-11-03T16:34:42.493+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-03T16:34:42.493+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-03T16:34:42.499+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:34:42.509+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:34:42.577+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=test)]
+2024-11-03T16:34:42.583+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-1] c.s.c.service.impl.ChatServiceImpl       : Question : test 
+2024-11-03T16:34:42.748+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-1] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T16:34:42.762+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:34:42.763+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T16:34:42.774+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:34:48.400+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:34:48.400+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:34:48.400+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=who are tou?)]
+2024-11-03T16:34:48.400+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-2] c.s.c.service.impl.ChatServiceImpl       : Question : who are tou? 
+2024-11-03T16:34:48.407+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-2] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am your virtual assistant.
+2024-11-03T16:34:48.407+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:34:48.407+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am your (truncated)...]
+2024-11-03T16:34:48.407+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:34:58.288+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:34:58.289+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:34:58.290+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=listen)]
+2024-11-03T16:34:58.290+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Question : listen 
+2024-11-03T16:34:58.291+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-3] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T16:34:58.291+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:34:58.291+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T16:34:58.291+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:35:02.481+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:35:02.481+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:35:02.481+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=Helo)]
+2024-11-03T16:35:02.481+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-4] c.s.c.service.impl.ChatServiceImpl       : Question : Helo 
+2024-11-03T16:35:02.487+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-4] c.s.c.service.impl.ChatServiceImpl       : Answer question : Hi there!
+2024-11-03T16:35:02.487+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:35:02.487+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=Hi there! (truncated)...]
+2024-11-03T16:35:02.489+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:35:14.887+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/chat/question", parameters={}
+2024-11-03T16:35:14.887+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.chatbot.controller.ChatController#helloWorld(RequestMessage)
+2024-11-03T16:35:14.888+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RequestMessage(question=okay)]
+2024-11-03T16:35:14.888+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-5] c.s.c.service.impl.ChatServiceImpl       : Question : okay 
+2024-11-03T16:35:14.892+07:00  INFO 22916 --- [chatbot] [http-nio-8080-exec-5] c.s.c.service.impl.ChatServiceImpl       : Answer question : I am sorry, I did not understand that.
+2024-11-03T16:35:14.893+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-03T16:35:14.893+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [BaseResponse(responseCode=00, message=Success, result=ResponseMessage(type=Answer, message=I am sorr (truncated)...]
+2024-11-03T16:35:14.894+07:00 DEBUG 22916 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-03T16:35:33.171+07:00  INFO 22916 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T16:35:33.176+07:00  WARN 22916 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-03T16:35:33.177+07:00  INFO 22916 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T16:35:33.179+07:00  INFO 22916 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
