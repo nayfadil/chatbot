@@ -19,7 +19,7 @@ Before running the application, ensure you have the following installed on your 
 Clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/yourusername/chatbot.git
+git clone https://github.com/nayfadil/chatbot.git
 cd chatbot
 ```
 
